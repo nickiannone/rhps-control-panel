@@ -12,6 +12,8 @@ RHPS Control Panel program design
 * In the event of brownout or power loss, the modules will reset to initial state, but try to figure out the system state from the radio connection, with the Screen module being the source of truth.
 * Video loading delay will be compensated for by the module to match up with the running video timer to within a specified tolerance (in ms).
   * How do we achieve this? Can we use compressed video files or do we need MJPEG streams or something?
+* The Lightboard module will have an interactive display which shows the current system status (which scene is showing, whether the screen is on or off, the video's current runtime, and so forth) and also allows remote control of the Screen module.
+* The Lightboard module should not be required to run the Screen module, but provides a way to control the module. The Screen module should function independently with only the inputs given to it (Lever and Reset Button).
 
 ## Modes of Operation
 
@@ -54,12 +56,22 @@ triggered and moved between via the lightboard module.
   * Tells the length of the current scene video, in milliseconds. Equal to video length (seconds) * 1000.
 * CONTROL_BIT (bool)
   * Indicates that this message should be taken as a control signal; when received, should change the system state to match the given properties as quickly as possible.
+  
+## User Interface (Lightboard Module)
+
+See docs/lightboard-module-mockup-1.png
 
 ## State Machine
 
 TODO
 
 # Software Design
+
+## Lightboard Module Software Design
+
+TODO
+
+## Screen Module Software Design
 
 TODO
 
