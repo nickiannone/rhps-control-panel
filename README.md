@@ -24,40 +24,15 @@ The Control Panel is broken up into several labeled components:
 
 ### Electrical Components
 
-* Sonic Oscillator
-  * Switches
-    * Potentiometers & Wiring
-  * Oscilloscopes
-    * Signal Generators
-    * Cheap Oscilloscopes
-* Reactor Power Input
-  * Gauge
-    * Large Needle Gauge (Analog Voltage)
-    * Low-Amp Analog Voltage Output
-  * Button Panel
-    * Lights
-    * 3 small locking switches
-    * Microcontroller with analog outputs
-* Sonic Transducer
-* Monitor
-  * Display
-    * BeagleBoard Microcomputer
-    * Display cord (HDMI?)
-    * Flat-screen monitor
-  * Lever
-    * Potentiometer and wiring
-* Triple Contact Electro Magnet
-  * TODO
-* Back Panel
-  * TODO
+See docs/ELECTRICAL.md
   
 ### Mechanical Components
 
-TODO
+See docs/MECHANICAL.md
 
 ### Program Design
 
-TODO
+See docs/PROGRAM.md
 
 ## Build
 
